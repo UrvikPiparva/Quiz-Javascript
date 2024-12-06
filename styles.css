@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #8e44ad, #e056fd, #ff7979);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#login-container, #quiz-container, #result-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #8e44ad;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #6c3483;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6c3483;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#question-container {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1c40f;
+    border-radius: 5px;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#question-container div {
+    margin: 5px 0;
+}
+
+#question-container label {
+    padding: 10px;
+    display: block;
+    background-color: #8e44ad;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#question-container label:hover {
+    background-color: #6c3483;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #e056fd;
+}
+#topic-selection-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+#topic-selection-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #8e44ad;
+}
+
+#topic-selection-container button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #8e44ad;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#topic-selection-container button:hover {
+    background-color: #6c3483;
+}
+

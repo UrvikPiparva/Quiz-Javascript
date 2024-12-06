@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="topic-selection-container" style="display: none;">
+        <h2>Select Quiz Topic</h2>
+        <button onclick="selectTopic('General Knowledge')">General Knowledge</button>
+        <button onclick="selectTopic('Computer')">Computer</button>
+        <button onclick="selectTopic('Maths')">Maths</button>
+        <button onclick="selectTopic('English Grammar')">English Grammar</button>
+    </div>
+
+    <div id="quiz-container" style="display: none;">
+        <div id="timer">15</div>
+        <div id="question-container"></div>
+        <button id="next-btn" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div id="result-container" style="display: none;">
+        <h2>Your Score: <span id="score"></span></h2>
+        <button onclick="goHome()">Home</button>
+        <button onclick="playAgain()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
